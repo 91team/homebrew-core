@@ -11,6 +11,6 @@ class Srcutil < Formula
 
   def install
     system "make", "build"
-    bin.install "srcutil"
+    bin.install "dist/srcutil" => "srcutil"
   end
 end
